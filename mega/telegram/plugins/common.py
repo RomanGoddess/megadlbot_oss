@@ -29,5 +29,5 @@ async def start_message_handler(c: MegaDLBot, m: Message):
                     )
     else:
         await m.reply_text(
-            text=f"Hello! My name is Megatron {emoji.MAN_BOWING_DARK_SKIN_TONE}"
+            text=f"<b>Hello, My Name Is 𝗠𝗘𝗚𝗔𝗧𝗥𝗢𝗡 (^。^)</b>\n\n<b>I'm A <u>𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠 𝗨𝗥𝗟</u> To <u>𝗙𝗜𝗟𝗘</u> Uploading Bot\n\n<b>Send Me Any Link, Wait For Me To Respond With <u>𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗</u> Or <u>𝗥𝗘𝗡𝗔𝗠𝗘</u> Before Proceeding To Starting Your Download</b></b>"
         )
