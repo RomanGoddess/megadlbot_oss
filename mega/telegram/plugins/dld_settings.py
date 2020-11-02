@@ -18,9 +18,9 @@ async def dld_settings_handler(c: MegaDLBot, m: Message):
         f"{'Set' if user_details['custom_thumbnail'] else None}",
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton(text=f"{emoji.WRENCH} Change Download Settings",
+                [InlineKeyboardButton(text=f"⚙️ 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗦𝗘𝗧𝗧𝗜𝗡𝗚𝗦",
                                       callback_data=f"dlsettings_{m.chat.id}")],
-                [InlineKeyboardButton(text=f"{emoji.VIDEO_CAMERA} Set a Custom Thumbnail",
+                [InlineKeyboardButton(text=f"🎥 𝗦𝗘𝗧 𝗧𝗛𝗨𝗠𝗕𝗡𝗔𝗜𝗟",
                                       callback_data=f"thumbnail_{m.chat.id}")]
             ]
         )
@@ -34,11 +34,11 @@ async def callback_query_dld_settings_handler(c: MegaDLBot, cb: CallbackQuery):
     await cb.message.edit_reply_markup(
         InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton(text=f"{emoji.PAPERCLIP} Force Document",
+                [InlineKeyboardButton(text=f"{emoji.PAPERCLIP} 𝗗𝗢𝗖𝗨𝗠𝗘𝗡𝗧",
                                       callback_data="f-docs")],
-                [InlineKeyboardButton(text=f"{emoji.BRIEFCASE} Force Document w Thumbnail",
+                [InlineKeyboardButton(text=f"{emoji.BRIEFCASE} 𝗗𝗢𝗖𝗨𝗠𝗘𝗡𝗧 𝗪 𝗧𝗛𝗨𝗠𝗕𝗡𝗔𝗜𝗟",
                                       callback_data="ct-docs")],
-                [InlineKeyboardButton(text=f"{emoji.VIDEOCASSETTE} Video w Thumbnail",
+                [InlineKeyboardButton(text=f"{emoji.VIDEOCASSETTE} 𝗩𝗜𝗗𝗘𝗢 𝗪 𝗧𝗛𝗨𝗠𝗕𝗡𝗔𝗜𝗟",
                                       callback_data="ct-videos")],
             ]
         )
