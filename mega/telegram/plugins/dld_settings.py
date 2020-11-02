@@ -12,9 +12,9 @@ from mega.database.users import MegaUsers
 async def dld_settings_handler(c: MegaDLBot, m: Message):
     user_details = await MegaUsers().get_user(m.from_user.id)
     await m.reply_text(
-        f"Your Current Settings are: \n"
-        f"{emoji.GEAR} Settings: {user_details['dld_settings']} \n"
-        f"{emoji.FRAMED_PICTURE} Custom Thumbnail: "
+        f"𝗬𝗼𝘂𝗿 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝗦𝗲𝘁𝘁𝗶𝗻𝗴𝘀 𝗔𝗿𝗲: \n"
+        f"{emoji.GEAR} 𝗦𝗲𝘁𝘁𝗶𝗻𝗴𝘀: {user_details['dld_settings']} \n"
+        f"{emoji.FRAMED_PICTURE} 𝗖𝘂𝘀𝘁𝗼𝗺 𝗧𝗵𝘂𝗺𝗯𝗻𝗮𝗶𝗹: "
         f"{'Set' if user_details['custom_thumbnail'] else None}",
         reply_markup=InlineKeyboardMarkup(
             [
