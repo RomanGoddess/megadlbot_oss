@@ -10,7 +10,7 @@ multidict==4.7.6
 pyaes==1.6.1
 pymongo==3.11.0
 pyreadline==2.1
-Pyrogram==1.0.6
+https://github.com/mahesh0253/pyrogram/archive/asyncio.zip
 PySocks==1.7.1
 TgCrypto==1.2.0
 yarl==1.5.1
